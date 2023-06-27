@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.contanier {
+  height: 100vh;
+  width: 100vw;
+  max-height: 800px;
+  max-width: 1280px;
+  min-height: 600px;
+  min-width: 1000px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.contanier .card {
+  height: 379px;
+  width: 300px;
+  background: grey;
+  border-radius: 10px;
+  transition: 0.8s;
+  overflow: hidden;
+  background-color: #000000;
+  box-shadow: 0 70px 63px -60px #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url(../images/alpacino.jpg);
+  background-size: 300px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.contanier .card:hover {
+  background-image: url(../images/alpacino.jpg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 600px;
+}
+.contanier .card .border {
+  height: 369px;
+  width: 290px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
+}
+.contanier .card .border:hover {
+  border: 1px solid white;
+}
+.contanier .card .border h2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.contanier .card .icons {
+  position: absolute;
+  fill: #fff;
+  color: #fff;
+  height: 130px;
+  top: 226px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 82%;
+}
+.contanier .card .icons i {
+  opacity: 0;
+  cursor: pointer;
+}
+.contanier .card .icons i:hover {
+  background: #ec008c;
+  border-radius: 50%;
+}
+
+.card:hover .border h2 {
+  opacity: 1;
+}
+
+.card:hover .icons i {
+  opacity: 1;
+}/*# sourceMappingURL=main.css.map */
